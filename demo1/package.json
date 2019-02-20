@@ -1,0 +1,11 @@
+{
+  "name": "yarn-link-test",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "common",
+    "server"
+  ]
+}
