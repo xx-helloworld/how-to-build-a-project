@@ -2,6 +2,11 @@
 
 在项目中，经常会出现项目嵌套的情况出现，yarn workspace解决了这个问题
 
+yarn workspace 2个必要条件
+
++ private: true
++ workspace: {}
+
 首先设置一下外层的package.json
 
 ```
@@ -46,3 +51,5 @@ node server/index.js
 // hello xxtest
 
 ```
+
+也可以用yarn link或者npm link的方式解决。

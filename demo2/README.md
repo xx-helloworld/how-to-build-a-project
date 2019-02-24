@@ -1,4 +1,4 @@
-# yarn workspace demo2
+# yarn workspace with one folder
 
 一般通用是放到packages文件夹下面统一管理
 
