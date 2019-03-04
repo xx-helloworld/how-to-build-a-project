@@ -24,6 +24,9 @@ lerna publish 0.0.2-alpha.1 --force-publish=*
 # - @xx-learning/window: 0.0.1 => 0.0.2-alpha.1
 ```
 
+ceshi 
+
+
 > 如果npm仓库里面没有@xx-learning的组织是无法发布@xx-learning/demo，必须要要去新建一个
 
 其他可选项在官网也有写，不过官网的文档不是特别的清楚
