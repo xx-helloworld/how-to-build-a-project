@@ -18,12 +18,15 @@ lerna publish --canary
 + --skip-git – 不运行任何git命令.
 + --force-publish [packages] — 强制publish到一个特殊的tag或者版本号,如果使用*则提交所有的packages到某个版本号.
 ```
-
+lerna publish 0.0.2-alpha.1 --force-publish=*
+# Changes:
+# - @xx-learning/house: 0.0.3-alpha.0 => 0.0.2-alpha.1
+# - @xx-learning/window: 0.0.1 => 0.0.2-alpha.1
 ```
 
+> 如果npm仓库里面没有@xx-learning的组织是无法发布@xx-learning/demo，必须要要去新建一个
 
-如果npm仓库里面没有@xx-learning则无法发布@xx-learning/demo，必须要要去新建一个
-
+其他可选项在官网也有写，不过官网的文档不是特别的清楚
 
 
 
