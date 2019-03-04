@@ -1,6 +1,6 @@
 {
-  "name": "@xxlearning/house",
-  "version": "1.0.1-alpha.3",
+  "name": "@xx-learning/house",
+  "version": "0.0.0",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -9,7 +9,7 @@
     "directory": "demo5/packages/house"
   },
   "dependencies": {
-    "@xx-learning/window": "^1.0.1-alpha.1"
+    "@xx-learning/window": "^0.0.0"
   },
   "devDependencies": {
     "@types/node": "^10.3.2",
