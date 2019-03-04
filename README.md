@@ -27,3 +27,5 @@
 > [yarn workspace](https://yarnpkg.com/zh-Hans/docs/cli/workspace)
 
 > [https://github.com/benawad/typescript-yarn-workspace-example](https://github.com/benawad/typescript-yarn-workspace-example)
+
+> [使用lerna优雅地管理多个package](https://zhuanlan.zhihu.com/p/35237759)
