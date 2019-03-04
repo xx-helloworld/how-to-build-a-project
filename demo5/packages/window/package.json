@@ -17,5 +17,6 @@
     "build": "tsc",
     "build:watch": "tsc --watch"
   },
-  "author": "xxholly32"
+  "author": "xxholly32",
+  "gitHead": "b0b974fa6993f4f779651dcde6e7f5c74e70522a"
 }
