@@ -29,3 +29,5 @@
 > [https://github.com/benawad/typescript-yarn-workspace-example](https://github.com/benawad/typescript-yarn-workspace-example)
 
 > [使用lerna优雅地管理多个package](https://zhuanlan.zhihu.com/p/35237759)
+
+> [lerna 官网](https://lernajs.io/)
