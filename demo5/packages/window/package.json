@@ -17,5 +17,5 @@
     "build": "tsc",
     "build:watch": "tsc --watch"
   },
-  "author": "xiangxiao"
+  "author": "xxholly32"
 }
