@@ -1,11 +1,11 @@
 {
   "name": "@xx-learning/house",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@xx-learning/window": "1.0.0"
-  },  
+    "@xx-learning/window": "^1.0.0-alpha.0"
+  },
   "devDependencies": {
     "@types/node": "^10.3.2",
     "ts-node": "^6.1.0",
