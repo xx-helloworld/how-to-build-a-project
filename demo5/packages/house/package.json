@@ -20,6 +20,5 @@
     "start": "ts-node src/index.ts",
     "build": "tsc"
   },
-  "author": "xxholly32",
-  "gitHead": "b0b974fa6993f4f779651dcde6e7f5c74e70522a"
+  "author": "xxholly32"
 }
