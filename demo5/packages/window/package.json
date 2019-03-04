@@ -1,5 +1,5 @@
 {
-  "name": "@xx-learning/window",
+  "name": "@xxxlearning/window",
   "version": "1.0.1-alpha.1",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -18,5 +18,5 @@
     "build:watch": "tsc --watch"
   },
   "author": "xxholly32",
-  "gitHead": "b0b974fa6993f4f779651dcde6e7f5c74e70522a"
+  "gitHead": "15c39f0ea7358bb8aaae7d58e61b56576935279a"
 }
