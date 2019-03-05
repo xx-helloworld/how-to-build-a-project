@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Hello VuePress',
+    title: 'How to build a project',
     description: 'Just playing around',
     base: "/how-to-build-a-project/",
     host: "0.0.0.0",
@@ -7,20 +7,18 @@ module.exports = {
         sidebar: 'auto',
         // locales: {
         nav: [
-            { text: 'Home', link: '/' },
-            { text: 'foo', link: '/foo/' },
-            { text: 'bar', link: '/bar/' }
+            { text: 'doc', link: '/' }
         ],
         sidebar: {
             // fallback
-            '/foo/': [{
-                title: "foo title",
+            '/': [{
+                title: "开个头",
                 collapsable: false,
-                sidebarDepth: 1,
                 children: [
-                    'workspaces',
-                    'typescript',
-                    'typescript-jest'
+                    '/doc/why',
+                    '/doc/workspaces',
+                    '/doc/typescript',
+                    '/doc/typescript-jest'
                 ]
             }
             ]
