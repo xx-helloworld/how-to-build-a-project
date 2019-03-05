@@ -1,5 +1,5 @@
 {
-  "name": "@xx-learning-typescript/common",
+  "name": "@xx-learning/typescript-common",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "version": "1.0.0",

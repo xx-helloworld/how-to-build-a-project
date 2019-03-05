@@ -1,10 +1,10 @@
 {
-  "name": "@xx-learning-typescript-jest/server",
+  "name": "@xx-learning/typescript-jest-server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@xx-learning-typescript-jest/common": "^1.0.0"
+    "@xx-learning/typescript-jest-common": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^10.3.2",

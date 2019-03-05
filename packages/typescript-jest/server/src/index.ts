@@ -1,4 +1,4 @@
-import { commonfn } from "@xx-learning-typescript-jest/common";
+import { commonfn } from "@xx-learning/typescript-jest-common";
 
 export const serverfn = () => {
     return commonfn("world") + "!!"

@@ -1,5 +1,5 @@
 {
-  "name": "@xx-learning-workspaces/common",
+  "name": "@xx-learning/workspaces-common",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT"
