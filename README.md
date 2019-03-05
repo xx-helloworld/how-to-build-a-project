@@ -23,7 +23,6 @@ Babel采用Monorepo方法，所有正式维护的模块都在同一repo中。
  * 代码库会变得庞大
  * 规模更大.
  * [Can't `npm install` modules directly from GitHub](https://github.com/npm/npm/issues/2974)
- * ???
 
 ## 官网publish说明
 
