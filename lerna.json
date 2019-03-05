@@ -1,8 +1,8 @@
 {
   "packages": [
-    "packages/workspaces/*",
+    "packages/typescript-jest/*",
     "packages/typescript/*",
-    "packages/typescript-jest/*"
+    "packages/workspaces/*"
   ],
-  "version": "0.0.0"
+  "version": "1.0.0-alpha.0"
 }
