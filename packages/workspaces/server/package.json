@@ -1,9 +1,9 @@
 {
   "name": "@xx-learning/workspaces-server",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.3",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@xx-learning/workspaces-common": "^1.0.0-alpha.1"
+    "@xx-learning/workspaces-common": "^1.0.0-alpha.3"
   }
 }
