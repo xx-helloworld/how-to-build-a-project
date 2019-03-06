@@ -7,9 +7,10 @@
     "release": "lerna publish"
   },
   "devDependencies": {
-    "ts-jest": "^24.0.0",
     "jest": "^24.1.0",
     "lerna": "^3.13.0",
+    "lerna-changelog": "^0.8.2",
+    "ts-jest": "^24.0.0",
     "typescript": "^3.3.3333"
   }
 }
