@@ -1,11 +1,14 @@
 {
-  "name": "@xx-learning/el-button",
+  "name": "@xx-learning/button-in-demo",
   "version": "1.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.conf.js --mode=development"
+  },
+  "dependencies": {
+    "@xx-learning/el-button": "1.0.0"
   },
   "devDependencies": {
     "ts-loader": "^5.3.3",

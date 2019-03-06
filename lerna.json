@@ -2,7 +2,8 @@
   "packages": [
     "packages/typescript-jest/*",
     "packages/typescript/*",
-    "packages/workspaces/*"
+    "packages/workspaces/*",
+    "packages/uidemo/*"
   ],
   "version": "1.0.0-alpha.5"
 }
