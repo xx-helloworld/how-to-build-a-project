@@ -2,6 +2,7 @@
   "name": "how-to-build-a-project",
   "private": true,
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "test": "yarn jest",
     "release": "lerna publish"
