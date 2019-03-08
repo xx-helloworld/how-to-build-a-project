@@ -8,20 +8,37 @@ module.exports = {
         filename: "index.js"
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.vue', '.vuex']
+        extensions: ['.ts', '.tsx', '.vue', '.js']
     },
     module: {
         rules: [
-            { test: /\.vue$/, loader: 'vue-loader',
-              options: {
-                loaders: {
-                  ts: 'ts-loader',
-                  tsx: 'babel-loader!ts-loader',
-                }
-              }
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             },
-            { test: /\.ts$/, loader: 'ts-loader', options: { appendTsSuffixTo: [/TS\.vue$/] } },
-            { test: /\.tsx$/, loader: 'babel-loader!ts-loader', options: { appendTsxSuffixTo: [/TSX\.vue$/] } }
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
+            },
+            {
+                test: /\.(ts|tsx)?$/,
+                loader: 'ts-loader',
+                exclude: /node_modules/,
+                options: {
+                    appendTsSuffixTo: [
+                    /\.vue$/
+                    ]
+                }
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'less-loader'
+                ]
+            }
         ]
     },
     plugins: [

@@ -1,4 +1,6 @@
 const merge = require('webpack-merge');
 const baseWebpackConfig = require('../../../webpack.conf');
 
-module.exports = merge(baseWebpackConfig)
+module.exports = merge(baseWebpackConfig, {
+    entry: "./src/index.js"
+})

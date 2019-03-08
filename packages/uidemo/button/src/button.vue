@@ -1,10 +1,10 @@
 <template>
-    <button>
-        <slot />
+    <button class="btn-default">
+        <slot />aa
     </button>
 </template>
 
-<script lang="ts">
+<script>
 export default {
     name: "ElButton"
 }

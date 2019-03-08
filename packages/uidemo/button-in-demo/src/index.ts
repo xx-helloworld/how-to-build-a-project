@@ -1,7 +1,6 @@
-const ElButtonInDemo = require('./button-in-demo.vue') 
+import Vue from 'vue'
+import ElButtonInDemo from './button-in-demo.vue'
 
-ElButtonInDemo.install = function(Vue: any){
-    Vue.component(ElButtonInDemo.name, ElButtonInDemo)
-}
+Vue.component(ElButtonInDemo.name, ElButtonInDemo)
 
 module.exports = ElButtonInDemo

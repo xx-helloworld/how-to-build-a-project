@@ -1,0 +1,16 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.42"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-register-components": "^1.0.0-alpha.42",
+    "@xx-learning/el-button": "1.0.0"
+  }
+}

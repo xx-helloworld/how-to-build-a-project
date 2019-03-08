@@ -1,14 +1,24 @@
 {
   "name": "how-to-build-a-project",
   "private": true,
+  "workspaces": [
+    "packages/typescript-jest/*",
+    "packages/typescript/*",
+    "packages/workspaces/*",
+    "packages/uidemo/*",
+    "packages/docs"
+  ],
   "scripts": {
+    "docs": "yarn workspace docs dev",
     "commit": "npx git-cz",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna run build && lerna bootstrap",
     "build": "lerna run build",
     "test": "yarn jest",
     "release": "lerna publish"
   },
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "jest": "^24.1.0",
     "lerna": "^3.13.0",
     "lerna-changelog": "^0.8.2",

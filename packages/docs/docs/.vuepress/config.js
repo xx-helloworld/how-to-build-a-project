@@ -30,14 +30,18 @@ module.exports = {
         }
     },
     
-    plugins: [
+    plugins: [   
+        // [
+        //     '@xx-learning/el-button',
+        //     true
+        // ]     
         [ 
-            'register-components', 
+            '@vuepress/register-components', 
             {
               components: [
                 {
                   name: 'el-button',
-                  path: '../../packages/uidemo/button/src/button.vue'
+                  path: '../../../../packages/uidemo/button/src/button.vue'
                 }
               ]
             }

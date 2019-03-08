@@ -1,17 +1,17 @@
 <template>
     <div>
-        <input value="data"/>
+        <input class="input-default" value="data"/>
         <el-button>button</el-button>
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import ElButton from "@xx-learning/el-button"
 
 export default {
-    name:"ElInput",
+    name:"button-in-demo",
     components: {ElButton},
-    data(): Object {
+    data() {
         return {
             data: "hello world"
         }
