@@ -1,0 +1,34 @@
+0 silly argv { _: [ 'clean' ], lernaVersion: '3.13.1', '$0': 'lerna' }
+1 notice cli v3.13.1
+2 verbose rootPath /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project
+3 info Removing the following directories:
+4 info clean packages/docs/node_modules
+4 info clean packages/typescript-jest/common/node_modules
+4 info clean packages/typescript-jest/server/node_modules
+4 info clean packages/typescript/common/node_modules
+4 info clean packages/typescript/server/node_modules
+4 info clean packages/uidemo/button-in-demo/node_modules
+4 info clean packages/uidemo/button/node_modules
+4 info clean packages/workspaces/common/node_modules
+4 info clean packages/workspaces/server/node_modules
+5 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/docs/node_modules
+6 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/docs/node_modules
+7 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript-jest/common/node_modules
+8 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript-jest/common/node_modules
+9 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript-jest/server/node_modules
+10 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript-jest/server/node_modules
+11 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript/common/node_modules
+12 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript/common/node_modules
+13 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript/server/node_modules
+14 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/typescript/server/node_modules
+15 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/uidemo/button-in-demo/node_modules
+16 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/uidemo/button-in-demo/node_modules
+17 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/uidemo/button/node_modules
+18 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/uidemo/button/node_modules
+19 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/workspaces/common/node_modules
+20 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/workspaces/common/node_modules
+21 info clean removing /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/workspaces/server/node_modules
+22 silly rimrafDir /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/workspaces/server/node_modules
+23 error Error: Command failed: /usr/local/bin/node /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/node_modules/rimraf/bin.js --no-glob /Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/packages/docs/node_modules/
+23 error     at makeError (/Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/node_modules/execa/index.js:174:9)
+23 error     at Promise.all.then.arr (/Users/xiangxiao/Documents/work/workspace/how-to-build-a-project/node_modules/execa/index.js:278:16)

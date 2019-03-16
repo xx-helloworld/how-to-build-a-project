@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "vuepress dev docs --temp .temp"
   },
-  "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.42"
-  },
   "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-alpha.42",
     "@vuepress/plugin-register-components": "^1.0.0-alpha.42",
-    "@xx-learning/el-button": "1.0.0"
+    "@xx-learning/el-button": "1.0.0",
+    "vuepress": "^1.0.0-alpha.44"
   }
 }
