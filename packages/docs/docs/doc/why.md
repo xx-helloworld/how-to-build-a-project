@@ -1,8 +1,8 @@
-# 为什么babel要使用monorepo?
+# 为什么要使用monorepo?
 
 > 用于管理Babel中monorepo的工具已提取为[Lerna](https://github.com/lerna/lerna)
 
-让一个multimodule project(复杂)里面包含很多multiple repos(多个简单项目)，非常让人感到兴奋
+让一个multimodule project(复杂项目)里面包含很多multiple repos(多个简单项目)，非常让人感到兴奋
 
 Babel采用Monorepo方法，所有正式维护的模块都在同一repo中。
 
