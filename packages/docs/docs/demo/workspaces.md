@@ -1,6 +1,6 @@
-# yarn workspace demo1
+# yarn workspace
 
-在项目中，经常会出现项目嵌套的情况出现，yarn workspace解决了这个问题
+在项目中，经常会出现项目嵌套的情况出现, A依赖B, 例如很多大项目都需要一个工具库等，yarn workspace解决了这个问题
 
 yarn workspace 2个必要条件
 

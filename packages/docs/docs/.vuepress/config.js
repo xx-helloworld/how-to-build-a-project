@@ -16,21 +16,22 @@ module.exports = {
           children: [
             "/doc/before",
             "/doc/why",
-            "/doc/workspaces",
-            "/doc/typescript",
-            "/doc/typescript-jest"
+            
           ]
         },
         {
-          title: "ui-demo",
+          title: "demo",
           collapsable: false,
-          children: ["/uidemo/button"]
+          children: [
+            "/demo/workspaces",
+            "/demo/typescript",
+            "/demo/typescript-jest",
+            "/demo/publish"
+          ]
         }
       ]
     }
   },
 
-  plugins: [
-    ["@vuepress/back-to-top", true]
-  ]
+  plugins: [["@vuepress/back-to-top", true]]
 };
