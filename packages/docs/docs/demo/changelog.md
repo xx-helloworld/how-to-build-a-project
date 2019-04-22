@@ -2,9 +2,9 @@
 
 ## monorepo 项目支持 changelog
 
-由于monorepo的特殊性, changelog的实现会比较复杂, 一个changelog可能包含多个repo的内容; 而又存在fix, feat等多个因素的存在; 需求比较多, 我还是拿lerna的changelog举例.
+由于monorepo的特殊性, changelog的实现会比较复杂, 一个changelog可能包含多个repo的内容; 而又存在fix, feat等多个因素的存在; 需求比较多, 我还是拿【lerna-changelog](https://github.com/lerna/lerna-changelog)举例.
 
-## 实现效果
+## 实现效果 [changelog](https://github.com/xx-helloworld/how-to-build-a-project/blob/master/CHANGELOG.md)
 
 ## 1.0.7-alpha.7 (2019-04-22)
 
