@@ -15,6 +15,7 @@
     "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "bootstrap": "lerna run build && lerna bootstrap",
     "build": "lerna run build",
+    "clean": "lerna clean",
     "test": "yarn jest",
     "release": "lerna publish"
   },

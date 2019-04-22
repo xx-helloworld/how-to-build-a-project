@@ -2,5 +2,17 @@
   "lerna": "^3.13.0",
   "npmClient": "yarn",
   "useWorkspaces": true,
-  "version": "1.0.0-alpha.5"
+  "version": "1.0.0-alpha.5",
+  "changelog": {
+    "repo": "xxholly32/how-to-build-a-project",
+    "labels": {
+      "PR: New Feature": ":rocket: New Feature",
+      "PR: Breaking Change": ":boom: Breaking Change",
+      "PR: Bug Fix": ":bug: Bug Fix",
+      "PR: Documentation": ":memo: Documentation",
+      "PR: Internal": ":house: Internal",
+      "PR: Underlying Tools": ":hammer: Underlying Tools"
+    },
+    "cacheDir": ".changelog"
+  }
 }
