@@ -17,7 +17,7 @@
     "build": "lerna run build",
     "clean": "lerna clean",
     "test": "yarn jest",
-    "release": "lerna publish"
+    "release": "lerna publish --force-publish=@xx-learning/typescript-common,@xx-learning/typescript-jest-server,@xx-learning/workspaces-common"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
