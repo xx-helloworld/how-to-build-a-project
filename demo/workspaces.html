@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>yarn workspace | How to build a project</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/how-to-build-a-project/assets/css/0.styles.acf5a847.css" as="style"><link rel="preload" href="/how-to-build-a-project/assets/js/app.4880efa5.js" as="script"><link rel="preload" href="/how-to-build-a-project/assets/js/2.969a05aa.js" as="script"><link rel="preload" href="/how-to-build-a-project/assets/js/11.10058d43.js" as="script"><link rel="prefetch" href="/how-to-build-a-project/assets/js/10.91b4040d.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/12.67c1b942.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/13.9070df5e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/14.112c14a3.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/3.7f18645e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/4.be38b93e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/5.039b2772.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/6.c661fdfe.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/7.fe739a20.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/8.5f22b452.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/9.8ba9e6c8.js">
+    <link rel="stylesheet" href="/how-to-build-a-project/assets/css/0.styles.acf5a847.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/how-to-build-a-project/" class="home-link router-link-active"><!----> <span class="site-name">How to build a project</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/how-to-build-a-project/" class="nav-link">doc</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/how-to-build-a-project/" class="nav-link">doc</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开个头</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/how-to-build-a-project/doc/before.html" class="sidebar-link">项目问题</a></li><li><a href="/how-to-build-a-project/doc/why.html" class="sidebar-link">为什么要使用monorepo?</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>demo</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/how-to-build-a-project/demo/workspaces.html" class="active sidebar-link">yarn workspace</a></li><li><a href="/how-to-build-a-project/demo/typescript.html" class="sidebar-link">.. + ts + lerna</a></li><li><a href="/how-to-build-a-project/demo/typescript-jest.html" class="sidebar-link">.. + jest</a></li><li><a href="/how-to-build-a-project/demo/publish.html" class="sidebar-link">publish</a></li><li><a href="/how-to-build-a-project/demo/changelog.html" class="sidebar-link">changelog</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="yarn-workspace"><a href="#yarn-workspace" aria-hidden="true" class="header-anchor">#</a> yarn workspace</h1> <p>在项目中，经常会出现项目嵌套的情况出现, A依赖B, 例如很多大项目都需要一个工具库等，yarn workspace解决了这个问题</p> <p>yarn workspace 2个必要条件</p> <ul><li>private: true</li> <li>workspace: {}</li></ul> <p>首先设置一下外层的package.json</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;private&quot;: true,
+&quot;workspaces&quot;: [
+    &quot;common&quot;,
+    &quot;server&quot;
+]
+</code></pre></div><p>配置完以后</p> <ul><li>所有依赖都会安装在全局</li> <li>子项目可以嵌套依赖，common和server</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// common/index.js
+
+module.exports = () =&gt; {
+    console.log(&quot;hello xxtest&quot;)
+}
+
+// server/package.json
+
+&quot;dependencies&quot;: {
+    &quot;common&quot;: &quot;1.0.0&quot;
+}
+
+// server/index.js
+
+const commonfn = require(&quot;common&quot;)
+
+commonfn()
+
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>yarn install
+
+node server/index.js
+
+// hello xxtest
+
+</code></pre></div><p>也可以用yarn link或者npm link的方式解决。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/how-to-build-a-project/doc/why.html" class="prev">
+          为什么要使用monorepo?
+        </a></span> <span class="next"><a href="/how-to-build-a-project/demo/typescript.html">
+          .. + ts + lerna
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/how-to-build-a-project/assets/js/app.4880efa5.js" defer></script><script src="/how-to-build-a-project/assets/js/2.969a05aa.js" defer></script><script src="/how-to-build-a-project/assets/js/11.10058d43.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>publish | How to build a project</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/how-to-build-a-project/assets/css/0.styles.acf5a847.css" as="style"><link rel="preload" href="/how-to-build-a-project/assets/js/app.4880efa5.js" as="script"><link rel="preload" href="/how-to-build-a-project/assets/js/2.969a05aa.js" as="script"><link rel="preload" href="/how-to-build-a-project/assets/js/8.5f22b452.js" as="script"><link rel="prefetch" href="/how-to-build-a-project/assets/js/10.91b4040d.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/11.10058d43.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/12.67c1b942.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/13.9070df5e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/14.112c14a3.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/3.7f18645e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/4.be38b93e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/5.039b2772.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/6.c661fdfe.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/7.fe739a20.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/9.8ba9e6c8.js">
+    <link rel="stylesheet" href="/how-to-build-a-project/assets/css/0.styles.acf5a847.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/how-to-build-a-project/" class="home-link router-link-active"><!----> <span class="site-name">How to build a project</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/how-to-build-a-project/" class="nav-link">doc</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/how-to-build-a-project/" class="nav-link">doc</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开个头</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/how-to-build-a-project/doc/before.html" class="sidebar-link">项目问题</a></li><li><a href="/how-to-build-a-project/doc/why.html" class="sidebar-link">为什么要使用monorepo?</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>demo</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/how-to-build-a-project/demo/workspaces.html" class="sidebar-link">yarn workspace</a></li><li><a href="/how-to-build-a-project/demo/typescript.html" class="sidebar-link">.. + ts + lerna</a></li><li><a href="/how-to-build-a-project/demo/typescript-jest.html" class="sidebar-link">.. + jest</a></li><li><a href="/how-to-build-a-project/demo/publish.html" class="active sidebar-link">publish</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/how-to-build-a-project/demo/publish.html#lerna-publish" class="sidebar-link">lerna publish</a></li><li class="sidebar-sub-header"><a href="/how-to-build-a-project/demo/publish.html#lerna-publish-的一些指令说明" class="sidebar-link">lerna publish 的一些指令说明</a></li></ul></li><li><a href="/how-to-build-a-project/demo/changelog.html" class="sidebar-link">changelog</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="publish"><a href="#publish" aria-hidden="true" class="header-anchor">#</a> publish</h1> <h2 id="lerna-publish"><a href="#lerna-publish" aria-hidden="true" class="header-anchor">#</a> lerna publish</h2> <p>给一个项目的更新创建新的release，采用询问的方式创建一个new version并更新所有packages到git和npm仓库；</p> <p>主要可选项</p> <ul><li>--npm-tag [tagname] — publish到某个tag上，默认是latest</li></ul> <blockquote><p>如果是内侧版本可以使用tagname=next，安装内测版本就是npm i xx@next</p></blockquote> <ul><li>--canary/-c – 创建一个随机变量的release.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>lerna publish --canary
+# 1.0.0 =&gt; 1.0.1-alpha.0+${SHA} of packages changed since the previous commit
+# a subsequent canary publish will yield 1.0.1-alpha.1+${SHA}, etc
+</code></pre></div><ul><li>--skip-git – 不运行任何git命令.</li> <li>--force-publish [packages] — 强制publish到一个特殊的tag或者版本号,如果使用*则提交所有的packages到某个版本号.</li></ul> <div class="language- extra-class"><pre class="language-text"><code>lerna publish 0.0.2-alpha.1 --force-publish=*
+# Changes:
+# - @xx-learning/house: 0.0.3-alpha.0 =&gt; 0.0.2-alpha.1
+# - @xx-learning/window: 0.0.1 =&gt; 0.0.2-alpha.1
+</code></pre></div><blockquote><p>如果npm仓库里面没有@xx-learning的组织是无法发布@xx-learning/demo，必须要要去新建一个</p></blockquote> <p>其他可选项在官网也有写，不过官网的文档不是特别的清楚</p> <h2 id="lerna-publish-的一些指令说明"><a href="#lerna-publish-的一些指令说明" aria-hidden="true" class="header-anchor">#</a> lerna publish 的一些指令说明</h2> <div class="language- extra-class"><pre class="language-text"><code>  Patch (0.0.3) #不说了
+  Minor (0.1.0) #不说了
+  Major (1.0.0) #不说了
+  Prepatch (0.0.4-alpha.0) #不说了
+  Preminor (0.1.0-alpha.0) #不说了
+  Premajor (1.0.0-alpha.0) #不说了
+  Custom Prerelease #如果用预发布就是发布了后面的小数点+1比如现在是0.0.3-alpha.1，预发布就是0.0.3-alpha.2
+  Custom Version #没试过，应该和上面一样但不发npm和git，和lerna version功能类似
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/how-to-build-a-project/demo/typescript-jest.html" class="prev">
+          .. + jest
+        </a></span> <span class="next"><a href="/how-to-build-a-project/demo/changelog.html">
+          changelog
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/how-to-build-a-project/assets/js/app.4880efa5.js" defer></script><script src="/how-to-build-a-project/assets/js/2.969a05aa.js" defer></script><script src="/how-to-build-a-project/assets/js/8.5f22b452.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>.. + ts + lerna | How to build a project</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/how-to-build-a-project/assets/css/0.styles.acf5a847.css" as="style"><link rel="preload" href="/how-to-build-a-project/assets/js/app.4880efa5.js" as="script"><link rel="preload" href="/how-to-build-a-project/assets/js/2.969a05aa.js" as="script"><link rel="preload" href="/how-to-build-a-project/assets/js/10.91b4040d.js" as="script"><link rel="prefetch" href="/how-to-build-a-project/assets/js/11.10058d43.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/12.67c1b942.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/13.9070df5e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/14.112c14a3.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/3.7f18645e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/4.be38b93e.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/5.039b2772.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/6.c661fdfe.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/7.fe739a20.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/8.5f22b452.js"><link rel="prefetch" href="/how-to-build-a-project/assets/js/9.8ba9e6c8.js">
+    <link rel="stylesheet" href="/how-to-build-a-project/assets/css/0.styles.acf5a847.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/how-to-build-a-project/" class="home-link router-link-active"><!----> <span class="site-name">How to build a project</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/how-to-build-a-project/" class="nav-link">doc</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/how-to-build-a-project/" class="nav-link">doc</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>开个头</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/how-to-build-a-project/doc/before.html" class="sidebar-link">项目问题</a></li><li><a href="/how-to-build-a-project/doc/why.html" class="sidebar-link">为什么要使用monorepo?</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>demo</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/how-to-build-a-project/demo/workspaces.html" class="sidebar-link">yarn workspace</a></li><li><a href="/how-to-build-a-project/demo/typescript.html" class="active sidebar-link">.. + ts + lerna</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/how-to-build-a-project/demo/typescript.html#ts-配置" class="sidebar-link">ts 配置</a></li><li class="sidebar-sub-header"><a href="/how-to-build-a-project/demo/typescript.html#lerna-配置" class="sidebar-link">lerna 配置</a></li></ul></li><li><a href="/how-to-build-a-project/demo/typescript-jest.html" class="sidebar-link">.. + jest</a></li><li><a href="/how-to-build-a-project/demo/publish.html" class="sidebar-link">publish</a></li><li><a href="/how-to-build-a-project/demo/changelog.html" class="sidebar-link">changelog</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="ts-lerna"><a href="#ts-lerna" aria-hidden="true" class="header-anchor">#</a> .. + ts + lerna</h1> <h2 id="ts-配置"><a href="#ts-配置" aria-hidden="true" class="header-anchor">#</a> ts 配置</h2> <p>tsconfig 可以根据每个子项目不同配置，也可以只在外层配置</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;extends&quot;: &quot;../../tsconfig.json&quot;,
+
+</code></pre></div><h2 id="lerna-配置"><a href="#lerna-配置" aria-hidden="true" class="header-anchor">#</a> lerna 配置</h2> <p>配置 <code>lerna</code> 可以在最外层输入build命令同时 <code>build packages</code> 内的子项目, <code>lerna</code> 是专门为配置 <code>monorepo</code> 项目所服务的，单独使用lerna也可以不需要配置<code>package.json</code>中的<code>packages</code>, <code>lerna</code> 内部会有配置. 而且采用 <code>lerna</code> 也可以搭配 <code>npm</code> 一起使用. 可以说部分功能和 <code>yarn workspace</code> 有些重合.</p> <div class="language- extra-class"><pre class="language-text"><code>&quot;scripts&quot;: {
+    &quot;build&quot;: &quot;lerna run build&quot;
+  },
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/how-to-build-a-project/demo/workspaces.html" class="prev">
+          yarn workspace
+        </a></span> <span class="next"><a href="/how-to-build-a-project/demo/typescript-jest.html">
+          .. + jest
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/how-to-build-a-project/assets/js/app.4880efa5.js" defer></script><script src="/how-to-build-a-project/assets/js/2.969a05aa.js" defer></script><script src="/how-to-build-a-project/assets/js/10.91b4040d.js" defer></script>
+  </body>
+</html>
