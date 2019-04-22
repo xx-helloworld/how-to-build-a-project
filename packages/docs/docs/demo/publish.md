@@ -1,8 +1,8 @@
-## publish
+# publish
 
 <!-- TODO: changelog使用优化 -->
 
-### lerna publish
+## lerna publish
 
 给一个项目的更新创建新的release，采用询问的方式创建一个new version并更新所有packages到git和npm仓库；
 
@@ -29,7 +29,7 @@ lerna publish 0.0.2-alpha.1 --force-publish=*
 
 其他可选项在官网也有写，不过官网的文档不是特别的清楚
 
-## publish 的一些版本说明
+## lerna publish 的一些指令说明
 
 ```
   Patch (0.0.3) #不说了
