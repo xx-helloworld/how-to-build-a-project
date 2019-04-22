@@ -4,11 +4,11 @@
   "useWorkspaces": true,
   "version": "1.0.0-alpha.5",
   "changelog": {
-    "repo": "xxholly32/how-to-build-a-project",
+    "repo": "xx-helloworld/how-to-build-a-project",
     "labels": {
       "PR: New Feature": ":rocket: New Feature",
       "PR: Breaking Change": ":boom: Breaking Change",
-      "PR: Bug fix": ":bug: Bug Fix",
+      "PR: Bug Fix": ":bug: Bug Fix",
       "PR: Documentation": ":memo: Documentation",
       "PR: Internal": ":house: Internal",
       "PR: Underlying Tools": ":hammer: Underlying Tools"
