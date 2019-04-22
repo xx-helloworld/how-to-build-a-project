@@ -8,7 +8,7 @@
     "labels": {
       "PR: New Feature": ":rocket: New Feature",
       "PR: Breaking Change": ":boom: Breaking Change",
-      "PR: Bug Fix": ":bug: Bug Fix",
+      "PR: Bug fix": ":bug: Bug Fix",
       "PR: Documentation": ":memo: Documentation",
       "PR: Internal": ":house: Internal",
       "PR: Underlying Tools": ":hammer: Underlying Tools"
