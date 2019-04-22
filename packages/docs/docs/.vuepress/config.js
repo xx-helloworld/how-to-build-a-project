@@ -26,7 +26,8 @@ module.exports = {
             "/demo/workspaces",
             "/demo/typescript",
             "/demo/typescript-jest",
-            "/demo/publish"
+            "/demo/publish",
+            "/demo/changelog"
           ]
         }
       ]
