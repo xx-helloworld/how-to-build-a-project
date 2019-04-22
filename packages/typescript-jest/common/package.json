@@ -2,7 +2,7 @@
   "name": "@xx-learning/typescript-jest-common",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "version": "1.0.0-alpha.5",
+  "version": "1.0.0-alpha.6",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^10.3.2",
