@@ -19,7 +19,6 @@ module.exports = {
     {name: 'docs'},
     {name: 'typescript'},
     {name: 'typescript-jest'},
-    {name: 'uidemo'},
     {name: 'common'}
   ],
 
